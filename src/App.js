@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import HomePage from "./HomePage";
+import "./App.css";
+import { KeywordStore } from "./store";
+import Navbar from "react-bootstrap/Navbar";
+
+const keywordStore = new KeywordStore();
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar bg="primary" expand="lg" variant="dark">
+        <Navbar.Brand href="#home">Weather App</Navbar.Brand>
+      </Navbar>
+      <HomePage keywordStore={keywordStore} />
     </div>
   );
 }
