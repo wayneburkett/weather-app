@@ -6,7 +6,7 @@
     "48": "logo192.png",
     "128": "logo512.png"
   },
-  "content_security_policy": "script-src 'self' 'sha256-WDhufSqZOEoWULzS4Nwz11MNyHzZClVYbQ2JSt1vfkw'; object-src 'self'",
+  "content_security_policy": "script-src 'self' 'sha256-iKzjkrxmbwS3kHKHpCyzu0KtM+aeGMeR7zVi2tvRmoA='; object-src 'self'",
   "permissions": [],
   "manifest_version": 2,
   "version": "0.0.1",
