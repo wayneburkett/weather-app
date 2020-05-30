@@ -34,7 +34,7 @@ OK, so yup is for form validation. Nothing too crazy here.
 
 Now I'm just copying everything into the JS files it says to create and trying to follow along with the React code. React is pretty incredible in that it doesn't take long before you start thinking in terms of components. It's a powerful model. It seems like it's really easy for an experienced JavaScript developer to get rolling with it.
 
-OK, so I created all the files, ran `npm run build`, loaded the unpacked extension, and...it failed with a CSP error, as [predicted by one of the comments on the tutorial](https://medium.com/@benfargher/hi-thanks-for-this-im-getting-the-following-error-however-and-the-popup-fails-to-load-4c703da1a8ff). This is because the build command inlines some JS in `index.html` and I'm guessing there's something wrong with the `content_security_policy` in `manifest.json`. Perhaps the inlined JS has changed since the tutorial was written (which would invalidate the hash)?
+OK, so I created all the files, ran `npm run build`, loaded the unpacked extension, and...it failed with a CSP error, as [predicted by one of the comments on the tutorial](https://medium.com/@benfargher/hi-thanks-for-this-im-getting-the-following-error-however-and-the-popup-fails-to-load-4c703da1a8ff). This is because the build command inlines some JS in `index.html` and I'm guessing there's something wrong with the `content_security_policy` in `manifest.json`. Perhaps the inlined JS has changed since the tutorial was written (thereby invalidating the hash)?
 
 In fact, it looks like Chrome will tell you in the error what the hash should be:
 
