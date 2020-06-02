@@ -8,7 +8,7 @@ I know JavaScript pretty well and I've made Chrome extensions before, but I've b
 
 ## What do I need to get started?
 
-First I need an API key from [OpenWeatherMap](OpenWeatherMap). Apparently I already have an account from who knows when. My key:
+First I need an API key from [OpenWeatherMap](https://openweathermap.org/). Apparently I already have an account from who knows when. My key:
 
     be2f0221009efbbe09a49c10cc563bff
 
